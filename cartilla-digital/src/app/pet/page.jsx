@@ -10,7 +10,7 @@ export default function PetPage() {
     const token = Array.from(crypto.getRandomValues(new Uint8Array(32)))
       .map((b) => b.toString(16).padStart(2, "0"))
       .join("");
-    const link = `https://cartilla.digital.DDT&JB.com/share/${token}`;
+    const link = `https://cartilla-digital-liart.vercel.app/${token}`;
     setShareLink(link);
     setQrOpen(true);
   }
